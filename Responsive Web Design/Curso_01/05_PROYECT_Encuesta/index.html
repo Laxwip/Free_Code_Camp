@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for the time to help us improve the platform</p>
+    </main>
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <br>
+      <input type="text" id="name" required placeholder="Axl William Pacheco Huané">
+
+      <br>
+
+      <label for="email" id="email-label">Email</label>
+      <br>
+      <input type="email" id="email" required placeholder="pachecogam135583@gmail.com">
+
+      <br>
+
+      <label for="number" id="number-label">Number</label>
+      <br>
+      <input type="number" id="number" min="0" max="100" placeholder="50">
+
+      <br>
+
+      <label for="dropdown">Aficiones</label>
+      <br>
+      <select name="dropdown" id="dropdown">
+        <option value="default">-</option>
+        <option value="opcion1">Opcion 1</option>
+        <option value="opcion2">Opcion 2</option>
+      </select>
+      
+      <br>
+      <p>¿Cuál es tu animal favorito?</p>
+      <div class="animalFav">
+        <label for="perro">
+          <input type="radio" name="animales" id="perro" value="perro">
+        Perro</label>
+        <label for="gato">
+          <input type="radio" name="animales" id="gato" value="gato">
+        Gato</label>
+        <label for="loro">
+          <input type="radio" name="animales" id="loro" value="loro">
+        Loro</label>
+      </div>
+      <br>
+      <p>¿Como está tu mochila?</p>
+      <div class="estadoMochila">
+        <label for="nuevo"><input type="checkbox" id="nuevo" value="nuevo">Nuevo</label>
+        <label for="viejo"><input type="checkbox" id="viejo" value="viejo">Viejo</label>
+        <label for="medio"><input type="checkbox" id="medio" value="medio">Medio</label>
+      </div>
+      <br>
+      <p>¿Por qué?</p>
+      <div class="comentarioDiv">
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+      </div>
+      <br>
+      <button id="submit" type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
